@@ -1,0 +1,20 @@
+# Created with manual update
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: M-Igashi.baken
+PackageVersion: 3.3.0
+InstallerType: zip
+NestedInstallerType: portable
+NestedInstallerFiles:
+  - RelativeFilePath: baken.exe
+Dependencies:
+  PackageDependencies:
+    - PackageIdentifier: Gyan.FFmpeg
+    - PackageIdentifier: Microsoft.VCRedist.2015+.x64
+ReleaseDate: 2026-09-08
+Installers:
+  - Architecture: x64
+    InstallerUrl: https://github.com/M-Igashi/baken/releases/download/v3.3.0/baken-v3.3.0-windows-x86_64.zip
+    InstallerSha256: D67BEACEF8B7B1F22E1BD6CC41945D7C707C02EC17A672F42A6597E2CB8622E9
+ManifestType: installer
+ManifestVersion: 1.12.0
